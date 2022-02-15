@@ -1,3 +1,5 @@
+let words = ["cat", "and", "dog"];
+
 function allowDrop(event) {
     event.preventDefault();
 }
@@ -21,7 +23,7 @@ checkButton.addEventListener("click", check);
 function check(event) {
     let div1 = document.getElementById("word");
     let str = div1.innerText.trim();
-    let phrase = "cat and dog";
+    let phrase = words[0] + " " + words[1] + " " + words[2];
     if (phrase == str) {
         alert("!!!");
     } else {
