@@ -25,8 +25,8 @@ var voiceSelect = document.getElementById("voice");
 // Get the attribute controls.
 var volumeInput = document.getElementById("volume");
 var rateInput = document.getElementById("rate");
-var pitchInput = document.getElementById("pitch");
-pitchInput.style.display = "none";
+// var pitchInput = document.getElementById("pitch");
+// pitchInput.style.display = "none";
 // Fetch the list of voices and populate the voice options.
 function loadVoices() {
     // Fetch the available voices.
@@ -68,7 +68,7 @@ function speak(text) {
     // Set the attributes.
     // msg.volume = parseFloat(volumeInput.value);
     // msg.rate = parseFloat(rateInput.value);
-    msg.pitch = parseFloat(pitchInput.value);
+    // msg.pitch = parseFloat(pitchInput.value);
 
     // If a voice has been selected, find the voice and set the
     // utterance instance's voice attribute.

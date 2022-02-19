@@ -100,13 +100,13 @@
     #word {
       width: 400px;
       height: 300px;
-      background-color: tan;
+      background-color: rgb(69, 235, 185);
     }
 
     .card {
       padding: 10px;
       margin: 5px;
-      background-color: tan;
+      background-color: rgb(69, 235, 185);
       display: inline-block;
     }
 
@@ -136,10 +136,10 @@
       <label for="rate">Rate</label>
       <input type="range" min="0.1" max="10" step="0.1" name="rate" id="rate" value="1" />
     </div> -->
-    <div class="option">
+    <!-- <div class="option">
       <label for="pitch">Pitch</label>
       <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1" />
-    </div>
+    </div> -->
 
 
     <div id="word" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
@@ -150,13 +150,16 @@
       ondragstart="drag(event)"
     /> -->
     <div id="drag1" draggable="true" ondragstart="drag(event)" class="card">
-      cat
+
     </div>
     <div id="drag2" draggable="true" ondragstart="drag(event)" class="card">
-      and
+
     </div>
     <div id="drag3" draggable="true" ondragstart="drag(event)" class="card">
-      dog
+
+    </div>
+    <div id="drag4" draggable="true" ondragstart="drag(event)" class="card">
+
     </div>
     <button id="check">Check</button>
 
